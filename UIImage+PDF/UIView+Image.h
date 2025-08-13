@@ -10,7 +10,7 @@
 
 @interface UIView( Image )
 
--(UIImage *) image;
+-(UIImage *) convertToImage;
 -(void) savePNG:(NSString *)filePath;
 -(void) saveJPEG:(NSString *)filePath :(float)quality;
 
