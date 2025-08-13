@@ -1,14 +1,14 @@
 //
-//  PDFView.m
+//  PDFImageView.m
 //
 //  Created by Nigel Barber on 15/10/2011.
 //  Copyright 2011 Mindbrix Limited. All rights reserved.
 //
 
-#import "PDFView.h"
+#import "PDFImageView.h"
 
 
-@implementation PDFView
+@implementation PDFImageView
 
 @synthesize page = m_page;
 @synthesize resourceName = m_resourceName;
@@ -33,7 +33,7 @@
 {
 	m_resourceName = resourceName;
 	
-    self.resourceURL = [ PDFView resourceURLForName: self.resourceName ];
+    self.resourceURL = [ PDFImageView resourceURLForName: self.resourceName ];
 }
 
 
@@ -54,7 +54,7 @@
 
 +(CGRect) mediaRect:(NSString *)resourceName
 {
-    return [ PDFView mediaRectForURL:[ PDFView resourceURLForName: resourceName ]];
+    return [ PDFImageView mediaRectForURL:[ PDFImageView resourceURLForName: resourceName ]];
 }
 
 

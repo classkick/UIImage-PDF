@@ -14,7 +14,7 @@ let package = Package(
             name: "UIImagePDF",
             path: "UIImage+PDF",
             publicHeadersPath: ".",
-            cSettings: [.headerSearchPath("."), .define("PDFView", to: "UIImagePDFView")]
+            cSettings: [.headerSearchPath(".")]
         )
     ]
 )
